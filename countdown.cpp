@@ -25,7 +25,7 @@ void countdown() {
             cout << "Seconds: " << seconds << endl; // Display time remaining
             seconds--; // Reduce seconds
             usleep(second); // Wait a second
-            system("clear"); // Clear the screen and repeat
+            system("clear"); // Clear the screen and repeat, change to "cls" if using windows
             
             if (seconds == 0) { // When the timer's done
                 break;
