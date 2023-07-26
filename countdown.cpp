@@ -99,10 +99,8 @@ void countdown() {
                 minutes = 59; // Reset minutes
             
             if (hours < 0) {
-                days--; //Reduce days
-                hours = 23; //Reset hours
-                minutes = 59; //Reset minutes
-                seconds = 59; //Reset seconds
+                days--; // Reduce days
+                hours = 23; // Reset hours
             }
 
             }
