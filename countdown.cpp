@@ -96,7 +96,6 @@ void countdown() {
         cin >> minutes;
         cout << "How many seconds? " << endl; //Input seconds
         cin >> seconds;
-    }
 
         while (true) {
             // Display time remaining
@@ -129,6 +128,7 @@ void countdown() {
             }
         }
     }
+}
     
 int main() {
     
