@@ -66,6 +66,24 @@ void countdown() {
         cin >> minutes;
         cout << "How many seconds? " << endl; // Input seconds
         cin >> seconds;
+
+        while(true) {
+            cout << "Hours: " << hours << endl;
+            cout << "Minutes: " << minutes << endl;
+            cout << "Seconds: " << seconds << endl;
+            seconds--; // Reduce seconds
+            usleep(second); // Wait a second
+            system("clear"); // Clear the screen
+
+            if (seconds < 0) {
+                minutes--; // Reduce minutes
+                seconds = 59; // Reset seconds
+            }
+
+            if (minutes < 0) {
+                hours--; // Reduce hours
+                minutes = 59; // Reset minutes
+        }
     }
     
     else if (choice == "days" || choice == "Days") {
